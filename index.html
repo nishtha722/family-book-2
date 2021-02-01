@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Project 78
+        </title>
+
+        <style>
+            body {
+                text-align: center;
+                background-color: rgb(0, 255, 221);
+            }
+
+            #heading {
+                color: rgba(0, 0, 0, 0.63);
+                font-family: cursive;
+                text-decoration-line: underline;
+                text-decoration-style: wavy;
+                text-decoration-color: rgb(25, 209, 209);
+            }
+
+            #image {
+                height:450px;
+                width:400px;
+                border-radius: 10%;
+                border-style: double;
+                border-width: 5px;
+                background-color: white;
+            }
+
+            #name {
+               color: blueviolet; 
+               font-weight: bold;
+               font-size: 22px;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h1 id="heading">THE FAMILY BOOK</h1>
+
+        <img id="image" src="./Project 78_files/d56cd25436d0d3f56ad2f143750f7455.png">
+
+        <h4 id="name">Mr. Manjit Singh</h4>
+
+        <button onclick="next()">
+            Next
+        </button>
+
+
+        <script>
+            var members= [
+                "https://i.pinimg.com/originals/d5/6c/d2/d56cd25436d0d3f56ad2f143750f7455.png",
+                "https://webstockreview.net/images/cute-clipart-grandma.jpg",
+                "https://previews.123rf.com/images/yupiramos/yupiramos1905/yupiramos190508410/122711992-dad-and-daughter-fathers-day-vector-illustration-design.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI8LYfzd03lqgBRi5B3wxyYkUUIqgezkpB0g&usqp=CAU",
+                "https://png.pngtree.com/png-clipart/20190516/original/pngtree-hand-drawn-character-walking-lady-sister-illustration-cartoon-card-love-commercial-png-image_4026263.jpg",
+                "https://us.123rf.com/450wm/kakigori/kakigori1511/kakigori151100055/49282228-stock-vector-beautiful-brunette-teenager-girl-with-glasses-sitting-on-isolated-white-background.jpg?ver=6",
+            ];
+            var names= [
+                "Mr. GN Sharan",
+                "Mrs.Manju Sharan",
+                "Mr.Rupesh Kumar",
+                "Mrs. Vedika Srivastava",
+                "Samridhi Srivastava",
+                "Nishtha Srivastava"
+            ];
+            var i=0;
+            function next(){
+            document.getElementById("image").src=members[i];
+            document.getElementById("name").innerHTML=names[i];
+            if (i>4){
+            i=0;
+            }
+            else i++;
+            };
+        </script>
+    
+</body></html>
